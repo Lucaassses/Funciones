@@ -1,3 +1,5 @@
+import java.lang.Class
+
 //Lucas Rodriguez España
 
 fun main() {
@@ -10,17 +12,26 @@ fun main() {
     cuadrado()
     println("La raiz del numero $n1 es : ${raiz()}")
     println("El cuadrado es : ${cuadrado()}")
+    seno(12.0)
 
     var estado = true
 
-    while(estado){
+    /*while(estado){
         println("""
             
         """.trimIndent())
     }
+*/
+
+    var op = Operaciones1 (0.0, 0.0)
+    op.raiz(9.0)
 
 
+    var op1 = Operaciones()
 
+    op1.setA(5.0)
+    op1.setB(6.0)
+    op1.cuadrado(op1.getB())
 
 
 }
@@ -58,5 +69,12 @@ fun multi (n1:Double, n2:Double): Double {
     return (n1*n2)
     println("La multiplicacion es ${multi(n1, n2)}")
 }
+
+fun seno (x:Double){
+    var op = Math.sin(x)
+    println(op)
+}
+
+
 
 
